@@ -16,7 +16,7 @@ function getFibList(howMany) {
 	for (i = 0; i < howMany; i++) {
 		fibList[i] = fib(i);
 	}
-	fibslist.shift();
+	fibList.shift();
 	document.getElementById('output1').value = fibList.join(', ');
 }
 
@@ -52,8 +52,7 @@ function madLibGenerator() {
 
 function createinputArray() {
 	for (i = 0; i <= 13; i++) {
-		inputArray[i];
-		document.getElementById('i' + i).value;
+		inputArray[i] = document.getElementById('i' + i).value;
 	}
 }
 
